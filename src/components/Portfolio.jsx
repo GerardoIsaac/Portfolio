@@ -29,7 +29,7 @@ const Portfolio = () => {
       src: reactSmooth,
     },
     {
-      id: 5,
+      id: 6,
       src: reactWeather,
     },
   ];
@@ -37,7 +37,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full
+      className="pt-20 bg-gradient-to-b from-black to-gray-800 w-full
     text-white"
     >
       <div

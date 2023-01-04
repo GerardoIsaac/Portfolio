@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       name="about"
-      className="w-full pt-16 bg-gradient-to-b from-gray-800
+      className="w-full pt-20 bg-gradient-to-b from-gray-800
       to-black text-white"
     >
       <div

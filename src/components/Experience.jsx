@@ -88,7 +88,7 @@ const Experience = () => {
           {/* Individual Card */}
           {skills.map(({ id, src, title, style }) => (
             <div
-              id={id}
+              key={id}
               className={`shadow-md hover:scale-105 duration-500
             py-2 rounded-lg ${style}`}
             >
