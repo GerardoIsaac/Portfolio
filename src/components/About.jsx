@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div
+    <section
       name="about"
-      className="w-full bg-gradient-to-b from-gray-800
+      className="w-full pt-16 bg-gradient-to-b from-gray-800
       to-black text-white"
     >
       <div
@@ -19,7 +19,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
           vero at perspiciatis beatae, atque dolore nulla iusto! Quae, cum
           facere! Quas a modi nesciunt quasi necessitatibus fugit nobis sint,
@@ -36,7 +36,7 @@ const About = () => {
           optio unde voluptas nesciunt, omnis sint cum.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
