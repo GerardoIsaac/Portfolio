@@ -11,7 +11,7 @@ const Home = () => {
     >
       <div
         className=" mx-12 flex flex-col items-center 
-        justify-center h-screen px-4 md:flex-row md:justify-evenly"
+        justify-center h-full px-4 md:flex-row md:justify-evenly"
       >
         <div className="flex flex-col justify-center h-1/2">
           <h2 className="text-4xl font-bold text-white sm:text-7xl">

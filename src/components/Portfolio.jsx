@@ -35,10 +35,10 @@ const Portfolio = () => {
   ];
 
   return (
-    <div
+    <section
       name="portfolio"
-      className="pt-20 bg-gradient-to-b from-black to-gray-800 w-full
-    text-white"
+      className="bg-gradient-to-b from-black to-gray-800 w-full
+    text-white pt-20 md:pt-0 md:h-screen"
     >
       <div
         className="max-w-screen-lg p-4 mx-auto flex flex-col
@@ -74,7 +74,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
