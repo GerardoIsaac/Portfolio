@@ -8,7 +8,7 @@ import Graphql from "../assets/graphql.png";
 import Tailwind from "../assets/tailwind.png";
 import Github from "../assets/github.png";
 
-const Exerience = () => {
+const Experience = () => {
   const skills = [
     {
       id: 1,
@@ -62,7 +62,7 @@ const Exerience = () => {
 
   return (
     <div
-      name="Experience"
+      name="experience"
       className="bg-gradient-to-b
     from-gray-800 to-black w-full"
     >
@@ -75,7 +75,7 @@ const Exerience = () => {
             className="text-4xl font-bold border-b-4
           border-gray-500 p-2 inline"
           >
-            Exerience
+            Experience
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
@@ -102,4 +102,4 @@ const Exerience = () => {
   );
 };
 
-export default Exerience;
+export default Experience;

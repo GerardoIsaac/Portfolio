@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/heroImage.jpg";
 import { TiArrowRightOutline } from "react-icons/ti";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -22,16 +23,19 @@ const Home = () => {
             on web apps using technologies like React and Tailwind.
           </p>
           <div>
-            <button
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex
               items-center rounded-md bg-gradient-to-r from-cyan-500
               to-blue-500 cursor-pointer"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
-                <TiArrowRightOutline size={25} className='ml-1' />
+                <TiArrowRightOutline size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
