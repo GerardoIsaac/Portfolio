@@ -67,23 +67,21 @@ const Experience = () => {
     from-gray-800 to-black text-white"
     >
       <div
-        className="max-w-screen-lg mx-auto p-4 flex flex-col
-        justify-center w-full h-full "
+        className="max-w-screen-md mx-auto p-8 mt-8 flex flex-col
+        justify-center w-full md:mt-0 lg:max-w-4xl xl:max-w-7xl"
       >
-        <div className="py-8">
           <p
-            className="text-4xl font-bold border-b-4
+            className="my-8 max-w-fit text-4xl font-bold border-b-4
           border-gray-500 inline"
           >
             Experience
           </p>
-          <p className="py-6">These are the technologies I've worked with</p>
-        </div>
+          <p className="text-xl mb-8">These are the technologies I've worked with</p>
 
         {/* Skills Cards */}
         <div
-          className=" w-full grid text-center gap-8 px-12 
-          sm:px-0 grid-cols-2 md:grid-cols-3"
+          className=" w-full grid text-center gap-8 
+          grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
         >
           {/* Individual Card */}
           {skills.map(({ id, src, title, style }) => (
