@@ -34,7 +34,7 @@ const NavBar = () => {
     text-white fixed z-10"
     >
       <div>
-        <h1 className="text-5xl font-signature ml-2">Gerardo Castañeda</h1>
+        <p className="text-5xl font-signature ml-2">Gerardo Castañeda</p>
       </div>
 
       <ul className="hidden md:flex">
