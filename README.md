@@ -10,6 +10,10 @@ This is the repo for my personal portfolio
 
 * [LinkedIn](<https://www.linkedin.com/in/gerardo-isaac/>)
 
+## Watch Live
+
+* [Gerardo Isaac Portfolio](<https://gerardoisaac.netlify.app>)
+
 ## Contact me
 
 Write me at gerardoisaac.cm@gmail.com
