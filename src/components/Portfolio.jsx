@@ -37,22 +37,21 @@ const Portfolio = () => {
   return (
     <section
       name="portfolio"
-      className="bg-gradient-to-b from-black to-gray-800 w-full
-    text-white pt-20 md:pt-0 md:h-screen"
+      className="min-h-screen w-full flex flex-col justify-center items-center
+      bg-gradient-to-b from-black to-gray-800
+    text-white"
     >
       <div
-        className="max-w-screen-lg p-4 mx-auto flex flex-col
-        justify-center w-full h-full"
+        className="flex flex-col p-8 mt-8 max-w-screen-md 
+        md:mt-0 lg:max-w-4xl xl:max-w-7xl"
       >
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <p className="my-8 max-w-fit text-4xl font-bold inline border-b-4 border-gray-500">
             Portfolio
           </p>
-          <p className="py-6">Check out some of the work I have done</p>
-        </div>
+          <p className="text-xl mb-8">Check out some of the work I have done</p>
 
         {/* Cards */}
-        <div className="grid gap-8 px-12 sm:px-0 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Individual card */}
           {projects.map(({ id, src }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">

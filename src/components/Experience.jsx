@@ -61,14 +61,14 @@ const Experience = () => {
   ];
 
   return (
-    <div
+    <section
       name="experience"
-      className="bg-gradient-to-b
-    from-gray-800 to-black w-full pt-20 md:pt-0 md:h-screen"
+      className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b
+    from-gray-800 to-black text-white"
     >
       <div
         className="max-w-screen-lg mx-auto p-4 flex flex-col
-        justify-center w-full h-full text-white"
+        justify-center w-full h-full "
       >
         <div className="py-8">
           <p
@@ -98,7 +98,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
