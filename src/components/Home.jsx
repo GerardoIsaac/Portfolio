@@ -7,17 +7,18 @@ const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen bg-gradient-to-b from-black via-black to-gray-800"
+      className="min-h-screen w-full flex justify-center items-center bg-gradient-to-b from-black via-black to-gray-800"
     >
       <div
-        className=" mx-12 flex flex-col items-center 
-        justify-center h-full px-4 md:flex-row md:justify-evenly"
+        className="container min-h-screen p-8 mt-8 flex flex-col justify-evenly items-center md:mt-0 md:flex-row md:justify-evenly
+        "
       >
         <div className="flex flex-col justify-center h-1/2">
-          <h2 className="text-4xl font-bold text-white sm:text-7xl">
+          <h1 className="text-3xl sm:text-7xl text-white">Gerardo Castañeda</h1>
+          <h2 className="text-4xl font-bold text-white sm:text-5xl">
             Web Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md">
+          <p className="text-lg leading-tight text-gray-500 py-4 max-w-md sm:text-xl">
             A Frontend focused Developer looking to share my passion to the
             world. Join me down and let's collaborate together!. I love to work
             on web apps using technologies like React and Tailwind.
