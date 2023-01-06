@@ -5,8 +5,8 @@ const Contact = () => {
     <section
       name="contact"
       className="min-h-screen w-full flex flex-col justify-center items-center
-      bg-gradient-to-b from-black to-gray-800
-    text-white"
+      bg-gradient-to-b from-color1 via-color1 to-color2
+    text-slate-200"
     >
       <div
         className="max-w-screen-md mx-auto p-8 mt-8 flex flex-col
@@ -14,7 +14,7 @@ const Contact = () => {
       >
         <p
           className="my-8 max-w-fit text-4xl font-bold inline border-b-4
-          border-gray-500"
+          border-slate-500"
         >
           Contact
         </p>
@@ -29,6 +29,7 @@ const Contact = () => {
           md:space-y-8"
         >
           <input
+            required
             type="text"
             name="name"
             placeholder="Enter your name"
@@ -36,6 +37,7 @@ const Contact = () => {
             focus:outline-none md:p-4"
           />
           <input
+            required
             type="email"
             name="email"
             placeholder="Enter your email"
@@ -43,6 +45,7 @@ const Contact = () => {
             focus:outline-none md:p-4"
           />
           <textarea
+            required
             name="message"
             placeholder="Type a message"
             rows="8"
@@ -50,8 +53,8 @@ const Contact = () => {
               focus:outline-none md:p-4"
           ></textarea>
           <button
-            className="font-bold bg-gradient-to-b from-cyan-500
-            to-blue-500 px-6 py-3 mx-auto rounded-md 
+            className="font-bold bg-gradient-to-b from-color4
+            to-color5 px-6 py-3 mx-auto rounded-md
             hover:scale-110 duration-300 md:text-xl md:px-12 md:py-5"
           >
             Submit

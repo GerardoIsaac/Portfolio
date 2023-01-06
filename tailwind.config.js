@@ -10,7 +10,17 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    extend: {},
+    extend: {
+      colors: {
+        color1: '#051323',
+        color2: '#22445F',
+        color3: '#CAE3E3',
+        color4: '#A20234',
+        color5: '#eb125d',
+        color6: '#008F6B',
+        colordark: '#030A12',
+      },
+    },
     fontFamily: {
       signature: ['Great Vibes', 'cursive'],
     },

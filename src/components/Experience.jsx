@@ -64,7 +64,7 @@ const Experience = () => {
     <section
       name="experience"
       className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b
-    from-gray-800 to-black text-white"
+    from-color2 via-color1 to-color1 text-slate-200"
     >
       <div
         className="max-w-screen-md mx-auto p-8 mt-8 flex flex-col
@@ -72,7 +72,7 @@ const Experience = () => {
       >
           <p
             className="my-8 max-w-fit text-4xl font-bold border-b-4
-          border-gray-500 inline"
+          border-slate-500 inline"
           >
             Experience
           </p>
