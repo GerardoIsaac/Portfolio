@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import logoDark from "../assets/dark-shadow-logo.svg";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -30,11 +31,10 @@ const NavBar = () => {
 
   return (
     <div
-      className="flex justify-between items-center px-4 bg-colordark w-full h-20
-    text-white fixed z-10"
+      className="flex justify-between items-center px-4 bg-colordark w-full min-h-fit fixed z-10"
     >
       <div>
-        <p className="text-5xl font-signature ml-2">Gerardo Castañeda</p>
+        <img src={logoDark} alt="" width={190} />
       </div>
 
       {/* Desktop */}
@@ -66,10 +66,7 @@ const NavBar = () => {
         h-screen bg-gradient-to-b from-colordark via-color1 via to-color2 text-slate-300"
         >
           {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="cursor-pointer capitalize py-6 text-4xl"
-            >
+            <li key={id} className="cursor-pointer capitalize py-6 text-4xl">
               <Link
                 to={link}
                 onClick={() => setNav(!nav)}
