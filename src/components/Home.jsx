@@ -19,7 +19,7 @@ const Home = () => {
             Frontend Developer
           </h2>
           <p className="text-lg leading-none text-justify text-zinc-300 max-w-md sm:text-xl">
-            A Frontend focused Developer looking to share my passion to the
+            A Frontend focused web Developer looking to share my passion to the
             world. I love to create intuitive and visually appealing web
             applications. Join me down and let's collaborate together!.
           </p>
