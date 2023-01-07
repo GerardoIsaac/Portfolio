@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.jpg";
+import HeroImage from "../assets/heroImage.png";
 import { TiArrowRightOutline } from "react-icons/ti";
 import { Link } from "react-scroll";
 
@@ -11,7 +11,7 @@ const Home = () => {
     >
       <div
         className="container min-h-screen p-8 mt-8 flex flex-col justify-evenly items-center 
-        md:mt-0 md:flex-row md:justify-evenly"
+        md:flex-row md:justify-evenly"
       >
         <div className="flex flex-col justify-center h-1/2">
           <h1 className="text-3xl sm:text-7xl">Gerardo Castañeda</h1>
@@ -44,7 +44,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile pic"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="rounded-full shadow-lg hover:shadow-color4 duration-300 mx-auto w-3/4 md:w-3-4 lg:w-3/5"
           />
         </div>
       </div>

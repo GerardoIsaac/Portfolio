@@ -31,10 +31,11 @@ const NavBar = () => {
 
   return (
     <div
-      className="flex justify-between items-center px-4 bg-colordark w-full min-h-fit fixed z-10"
+      className="flex justify-between items-center px-4 bg-colordark w-full min-h-fit fixed z-10
+      md:p-4"
     >
       <div>
-        <img src={logoDark} alt="" width={190} />
+        <img src={logoDark} alt="" width={280} />
       </div>
 
       {/* Desktop */}
@@ -42,8 +43,9 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-slate-400 
-            hover:scale-105 hover:text-slate-100 duration-200"
+            className="p-2 cursor-pointer capitalize text-lg font-medium text-slate-400 
+            hover:scale-105 hover:text-slate-100 duration-200
+            lg:px-8"
           >
             <Link to={link} smooth duration={500}>
               {link}
