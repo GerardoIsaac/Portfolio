@@ -13,7 +13,7 @@ const Home = () => {
         className="container min-h-screen p-8 mt-8 flex flex-col justify-evenly items-center 
         md:flex-row md:justify-evenly"
       >
-        <div className="flex flex-col justify-center space-y-3 h-1/2 md:space-y-5">
+        <div className="flex flex-col justify-center space-y-4 h-1/2 md:space-y-8">
           <h1 className="text-3xl sm:text-7xl">Gerardo Castañeda</h1>
           <h2 className="text-3xl font-signature text-center text-color3 sm:w-full sm:text-4xl">
             Frontend Web Developer
@@ -23,12 +23,12 @@ const Home = () => {
             world. Join me down and let's collaborate together!. I love to work
             on web apps using technologies like React and Tailwind.
           </p>
-          <div>
+          <div className="flex justify-between lg:block">
             <Link
               to="portfolio"
               smooth
               duration={500}
-              className="group w-fit px-6 py-3 my-2 flex font-bold
+              className="group w-fit px-6 py-3 flex font-bold
               items-center rounded-md bg-gradient-to-r from-color4
               to-color5 cursor-pointer"
             >
@@ -37,6 +37,18 @@ const Home = () => {
                 <TiArrowRightOutline size={25} className="ml-1" />
               </span>
             </Link>
+            {/* mobile only resume button */}
+            <a
+              href="/Gerardo-Castaneda-Resume.pdf"
+              className="w-fit px-6 py-3 font-bold rounded-md 
+              bg-gradient-to-r from-color4 to-color5 cursor-pointer
+              lg:hidden"
+              download={true}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
           </div>
         </div>
 

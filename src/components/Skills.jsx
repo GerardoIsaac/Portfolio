@@ -14,8 +14,8 @@ import Express from "../assets/skills/express.png";
 import MySql from "../assets/skills/mysql.svg";
 import Git from "../assets/skills/git.svg";
 
-const Experience = () => {
-  const skills = [
+const Skills = () => {
+  const skillsset = [
     {
       id: 1,
       src: Html,
@@ -104,7 +104,7 @@ const Experience = () => {
   
   return (
     <section
-      name="experience"
+      name="skills"
       className="min-h-screen w-full flex flex-col justify-center items-center bg-gradient-to-b
     from-color2 via-color1 to-color1 text-slate-200"
     >
@@ -116,7 +116,7 @@ const Experience = () => {
             className="my-8 max-w-fit text-4xl font-bold border-b-4
           border-slate-500 inline"
           >
-            Experience
+            Skills
           </p>
           <p className="text-xl mb-8">These are the technologies I've worked with</p>
 
@@ -126,7 +126,7 @@ const Experience = () => {
           grid-cols-2 md:grid-cols-3 xl:grid-cols-4"
         >
           {/* Individual Card */}
-          {skills.map(({ id, src, title, style }) => (
+          {skillsset.map(({ id, src, title, style }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500
@@ -142,4 +142,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Skills;
