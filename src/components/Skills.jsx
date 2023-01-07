@@ -73,7 +73,7 @@ const Skills = () => {
     {
       id: 6,
       src: Nextjs,
-      title: "Next JS",
+      title: "Next.js",
       style: "shadow-white",
     },
     {
