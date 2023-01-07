@@ -1,12 +1,18 @@
 import React from "react";
-import Html from "../assets/html.png";
-import Css from "../assets/css.png";
-import Javascript from "../assets/javascript.png";
-import ReactIcon from "../assets/react.png";
-import Nextjs from "../assets/nextjs.png";
-import Graphql from "../assets/graphql.png";
-import Tailwind from "../assets/tailwind.png";
-import Github from "../assets/github.png";
+import Html from "../assets/skills/html.png";
+import Css from "../assets/skills/css.png";
+import Javascript from "../assets/skills/javascript.png";
+import ReactIcon from "../assets/skills/react.png";
+import Nextjs from "../assets/skills/nextjs.png";
+import Bootstrap from "../assets/skills/bootstrap.svg";
+import Tailwind from "../assets/skills/tailwind.png";
+import Sass from "../assets/skills/sass.svg";
+import Redux from "../assets/skills/redux.svg";
+import JQuery from "../assets/skills/jquery.svg";
+import Node from "../assets/skills/node.png";
+import Express from "../assets/skills/express.png";
+import MySql from "../assets/skills/mysql.svg";
+import Git from "../assets/skills/git.svg";
 
 const Experience = () => {
   const skills = [
@@ -35,10 +41,34 @@ const Experience = () => {
       style: "shadow-blue-600",
     },
     {
+      id: 8,
+      src: Sass,
+      title: "Sass",
+      style: "shadow-pink-300",
+    },
+    {
       id: 5,
       src: Tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
+    },
+    {
+      id: 7,
+      src: Bootstrap,
+      title: "Bootstrap",
+      style: "shadow-violet-500",
+    },
+    {
+      id: 14,
+      src: JQuery,
+      title: "JQuery",
+      style: "shadow-blue-500",
+    },
+    {
+      id: 9,
+      src: Redux,
+      title: "Redux",
+      style: "shadow-violet-600",
     },
     {
       id: 6,
@@ -47,19 +77,31 @@ const Experience = () => {
       style: "shadow-white",
     },
     {
-      id: 7,
-      src: Graphql,
-      title: "GraphQL",
-      style: "shadow-pink-400",
+      id: 10,
+      src: Node,
+      title: "Node.js",
+      style: "shadow-lime-400",
     },
     {
-      id: 8,
-      src: Github,
-      title: "GitHub",
-      style: "shadow-gray-400",
+      id: 11,
+      src: Express,
+      title: "Express",
+      style: "shadow-zinc-500",
+    },
+    {
+      id: 12,
+      src: MySql,
+      title: "MySQL",
+      style: "shadow-sky-600",
+    },
+    {
+      id: 13,
+      src: Git,
+      title: "Git",
+      style: "shadow-orange-600",
     },
   ];
-
+  
   return (
     <section
       name="experience"
@@ -90,7 +132,7 @@ const Experience = () => {
               className={`shadow-md hover:scale-105 duration-500
             py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="" className="w-20 mx-auto" />
+              <img src={src} alt="" className="w-20 h-20 mx-auto" />
               <p className="mt-4">{title}</p>
             </div>
           ))}
