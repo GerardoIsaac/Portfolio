@@ -13,12 +13,12 @@ const Home = () => {
         className="container min-h-screen p-8 mt-8 flex flex-col justify-evenly items-center 
         md:flex-row md:justify-evenly"
       >
-        <div className="flex flex-col justify-center h-1/2">
+        <div className="flex flex-col justify-center space-y-3 h-1/2 md:space-y-5">
           <h1 className="text-3xl sm:text-7xl">Gerardo Castañeda</h1>
-          <h2 className="text-4xl font-bold sm:text-5xl">
-            Web Developer
+          <h2 className="text-3xl font-signature text-center text-color3 sm:w-full sm:text-4xl">
+            Frontend Web Developer
           </h2>
-          <p className="text-lg leading-tight  text-zinc-300 py-4 max-w-md sm:text-xl">
+          <p className="text-lg leading-none text-justify text-zinc-300 max-w-md sm:text-xl">
             A Frontend focused Developer looking to share my passion to the
             world. Join me down and let's collaborate together!. I love to work
             on web apps using technologies like React and Tailwind.
@@ -44,7 +44,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile pic"
-            className="rounded-full shadow-lg hover:shadow-color4 duration-300 mx-auto w-3/4 md:w-3-4 lg:w-3/5"
+            className="rounded-full mx-auto w-3/4 border-2 border-color4 shadow-lg hover:shadow-color5 duration-300 md:w-3-4 lg:w-3/5"
           />
         </div>
       </div>

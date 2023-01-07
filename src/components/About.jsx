@@ -17,7 +17,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl text-justify md:mt-12">
+        <p className="text-xl md:mt-12">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
           vero at perspiciatis beatae, atque dolore nulla iusto! Quae, cum
           facere! Quas a modi nesciunt quasi necessitatibus fugit nobis sint,
@@ -25,7 +25,7 @@ const About = () => {
           fugit sed expedita. Hic placeat similique porro rerum saepe error qui.
         </p>
         <br />
-        <p className="text-xl text-justify">
+        <p className="text-xl">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, cumque
           perferendis. Distinctio nostrum culpa quis, voluptatibus, officia
           perferendis asperiores cum provident reiciendis animi obcaecati,

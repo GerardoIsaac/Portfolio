@@ -10,7 +10,7 @@ const Contact = () => {
     >
       <div
         className="max-w-screen-md mx-auto p-8 mt-8 flex flex-col
-        justify-center w-full md:mt-0 lg:max-w-4xl xl:max-w-7xl"
+        justify-center w-full lg:max-w-4xl xl:max-w-7xl"
       >
         <p
           className="my-8 max-w-fit text-4xl font-bold inline border-b-4
