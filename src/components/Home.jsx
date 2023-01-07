@@ -15,13 +15,13 @@ const Home = () => {
       >
         <div className="flex flex-col justify-center space-y-4 h-1/2 md:space-y-8">
           <h1 className="text-3xl sm:text-7xl">Gerardo Castañeda</h1>
-          <h2 className="text-3xl font-signature text-center text-color3 sm:w-full sm:text-4xl">
-            Frontend Web Developer
+          <h2 className="text-4xl font-signature text-center text-color3 sm:w-full md:text-6xl">
+            Frontend Developer
           </h2>
           <p className="text-lg leading-none text-justify text-zinc-300 max-w-md sm:text-xl">
             A Frontend focused Developer looking to share my passion to the
-            world. Join me down and let's collaborate together!. I love to work
-            on web apps using technologies like React and Tailwind.
+            world. I love to create intuitive and visually appealing web
+            applications. Join me down and let's collaborate together!.
           </p>
           <div className="flex justify-between lg:block">
             <Link
