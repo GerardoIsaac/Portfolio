@@ -8,17 +8,16 @@ const Contact = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          <FaLinkedin size={30} />
         </>
       ),
       href: "https://linkedin.com/in/gerardo-isaac/",
-      style: "rounded-tr-md",
     },
     {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+          <FaGithub size={30} />
         </>
       ),
       href: "https://github.com/gerardoisaac/",
@@ -27,22 +26,22 @@ const Contact = () => {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          <HiOutlineMail size={30}/>
         </>
       ),
       href: "mailto:gerardoisaac.cm@gmail.com",
     },
   ];
-  
+
   return (
     <section
       name="contact"
-      className="min-h-screen w-full flex flex-col justify-center items-center
+      className="min-h-screen w-full flex justify-center items-center
       bg-gradient-to-b from-color1 via-color1 to-color2
     text-slate-200"
     >
       <div
-        className="max-w-screen-md mx-auto p-8 mt-8 flex flex-col
+        className="max-w-screen-md mt-4 p-8 flex flex-col
         justify-center w-full lg:max-w-4xl xl:max-w-7xl"
       >
         <p
@@ -66,7 +65,7 @@ const Contact = () => {
             type="text"
             name="name"
             placeholder="Enter your name"
-            className="p-2 bg-transparent border-2 rounded-md
+            className="p-2 bg-transparent border-2 border-color3 rounded-md
             focus:outline-none md:p-4"
           />
           <input
@@ -74,7 +73,7 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="Enter your email"
-            className="p-2 bg-transparent border-2 rounded-md
+            className="p-2 bg-transparent border-2 border-color3 rounded-md
             focus:outline-none md:p-4"
           />
           <textarea
@@ -82,40 +81,34 @@ const Contact = () => {
             name="message"
             placeholder="Type a message"
             rows="8"
-            className="pt-2 pl-2 bg-transparent border-2 rounded-md
+            className="pt-2 pl-2 bg-transparent border-2 border-color3 rounded-md
               focus:outline-none md:p-4"
           ></textarea>
           <button
             className="font-bold bg-gradient-to-b from-color4
             to-color5 px-6 py-3 mx-auto rounded-md
-            hover:scale-110 duration-300 md:text-xl md:px-12 md:py-5"
+            hover:scale-110 duration-300 md:text-xl sm:px-12 sm:py-5"
           >
             Submit
           </button>
         </form>
 
         {/* mobile */}
-        <div className="text-white">
-        <ul>
-          {links.map(({ id, child, href, style }) => (
-            <li
-              key={id}
-              className={`flex justify-between items-center w-40 h-14 px-4 
-            ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 
-            bg-slate-600 ${style}`}
-            >
-              <a
-                href={href}
-                className="flex justify-between items-center w-full
-              text-color3 hover:text-white"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {child}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className='mt-12 lg:hidden'>
+          <ul className="flex w-full justify-evenly">
+            {links.map(({ id, child, href, style }) => (
+              <li key={id}>
+                <a
+                  href={href}
+                  className="text-color3"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {child}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>
