@@ -4,7 +4,7 @@ import Css from "../assets/skills/css.png";
 import Javascript from "../assets/skills/javascript.png";
 import ReactIcon from "../assets/skills/react.png";
 import Nextjs from "../assets/skills/nextjs.png";
-import Bootstrap from "../assets/skills/bootstrap.svg";
+import Bootstrap from "../assets/skills/bootstrap.png";
 import Tailwind from "../assets/skills/tailwind.png";
 import Sass from "../assets/skills/sass.svg";
 import Redux from "../assets/skills/redux.svg";
