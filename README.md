@@ -12,7 +12,7 @@ This is the repo for my personal portfolio
 
 ## Watch Live
 
-* [Gerardo Isaac Portfolio](<https://gerardoisaac.netlify.app>)
+* [Gerardo Isaac Portfolio](<https://gerardoisaac.com>)
 
 ## Contact me
 
