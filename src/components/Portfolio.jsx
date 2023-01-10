@@ -1,6 +1,6 @@
 import React from "react";
 import bookstore from "../assets/portfolio/bookstore.png";
-import installNode from "../assets/portfolio/installNode.jpg";
+import autoservice from "../assets/portfolio/autoservice.png";
 import navbar from "../assets/portfolio/navbar.jpg";
 import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
@@ -14,7 +14,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      src: installNode,
+      src: autoservice,
     },
     {
       id: 3,
