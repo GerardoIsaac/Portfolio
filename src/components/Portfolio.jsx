@@ -1,8 +1,8 @@
 import React from "react";
 import bookstore from "../assets/portfolio/bookstore.png";
 import autoservice from "../assets/portfolio/autoservice.png";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import minecraft from "../assets/portfolio/minecraft.png";
+import blog from "../assets/portfolio/blog.png";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
@@ -18,11 +18,11 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      src: navbar,
+      src: minecraft,
     },
     {
       id: 4,
-      src: reactParallax,
+      src: blog,
     },
     {
       id: 5,
