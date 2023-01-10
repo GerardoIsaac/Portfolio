@@ -3,8 +3,8 @@ import bookstore from "../assets/portfolio/bookstore.png";
 import autoservice from "../assets/portfolio/autoservice.png";
 import minecraft from "../assets/portfolio/minecraft.png";
 import blog from "../assets/portfolio/blog.png";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import movies from "../assets/portfolio/movies.png";
+import landingpage from "../assets/portfolio/landingpage.png";
 
 const Portfolio = () => {
   const projects = [
@@ -26,11 +26,11 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      src: reactSmooth,
+      src: movies,
     },
     {
       id: 6,
-      src: reactWeather,
+      src: landingpage,
     },
   ];
 
