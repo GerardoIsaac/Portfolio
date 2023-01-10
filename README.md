@@ -8,11 +8,11 @@ This is the repo for my personal portfolio
 
 ### Gerardo Castañeda
 
-* [LinkedIn](<https://www.linkedin.com/in/gerardo-isaac/>)
+* [LinkedIn](<https://www.linkedin.com/in/gerardoisaac/>)
 
 ## Watch Live
 
-* [Gerardo Isaac Portfolio](<https://gerardoisaac.netlify.app>)
+* [Gerardo Isaac Portfolio](<https://gerardoisaac.com>)
 
 ## Contact me
 
