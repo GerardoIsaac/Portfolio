@@ -1,4 +1,3 @@
-import React from "react";
 import bookstore from "../assets/portfolio/bookstore.png";
 import autoservice from "../assets/portfolio/autoservice.png";
 import minecraft from "../assets/portfolio/minecraft.png";
@@ -9,28 +8,36 @@ import landingpage from "../assets/portfolio/landingpage.png";
 const Portfolio = () => {
   const projects = [
     {
-      id: 1,
-      src: bookstore,
-    },
-    {
-      id: 2,
-      src: autoservice,
-    },
-    {
-      id: 3,
-      src: minecraft,
+      id: 6,
+      src: landingpage,
+      repo: "https://github.com/GerardoIsaac/Landing-page",
     },
     {
       id: 4,
       src: blog,
+      repo: "https://github.com/GerardoIsaac/Blog-app",
     },
+    {
+      id: 1,
+      src: bookstore,
+      repo: "https://github.com/GerardoIsaac/Book-store",
+    },
+
+    {
+      id: 3,
+      src: minecraft,
+      repo: "https://github.com/GerardoIsaac/Minecraft-clone",
+    },
+
     {
       id: 5,
       src: movies,
+      repo: "https://github.com/GerardoIsaac/Movie-search-app",
     },
     {
-      id: 6,
-      src: landingpage,
+      id: 2,
+      src: autoservice,
+      repo: "https://github.com/GerardoIsaac/automotive-site",
     },
   ];
 
@@ -53,7 +60,7 @@ const Portfolio = () => {
         {/* Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Individual card */}
-          {projects.map(({ id, src }) => (
+          {projects.map(({ id, src, demo, repo }) => (
             <div key={id} className="shadow-md shadow-slate-400 rounded-lg">
               <img
                 src={src}
@@ -62,12 +69,16 @@ const Portfolio = () => {
               hover:rounded-b-md"
               />
               <div>
-                <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
-                  Code
-                </button>
+                {/* <a href={demo} target="_blank" rel="noreferrer">
+                  <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
+                    Demo
+                  </button>
+                </a> */}
+                <a href={repo} target="_blank" rel="noreferrer">
+                  <button className="w-full py-3 duration-200 hover:scale-105">
+                    Code
+                  </button>
+                </a>
               </div>
             </div>
           ))}
