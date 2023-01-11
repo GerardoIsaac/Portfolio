@@ -27,17 +27,21 @@ const Portfolio = () => {
       id: 3,
       src: minecraft,
       repo: "https://github.com/GerardoIsaac/Minecraft-clone",
+      demo: 'https://gerardoisaac.github.io/Minecraft-clone/',
     },
 
     {
       id: 5,
       src: movies,
       repo: "https://github.com/GerardoIsaac/Movie-search-app",
+      demo: 'https://gerardoisaac.github.io/Movie-search-app/',
+
     },
     {
       id: 2,
       src: autoservice,
       repo: "https://github.com/GerardoIsaac/automotive-site",
+      demo: "https://gerardoisaac.github.io/automotive-site/",
     },
   ];
 
@@ -69,13 +73,13 @@ const Portfolio = () => {
               hover:rounded-b-md"
               />
               <div>
-                {/* <a href={demo} target="_blank" rel="noreferrer">
+                <a href={demo} target="_blank" rel="noreferrer">
                   <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
                     Demo
                   </button>
-                </a> */}
+                </a>
                 <a href={repo} target="_blank" rel="noreferrer">
-                  <button className="w-full py-3 duration-200 hover:scale-105">
+                  <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
                     Code
                   </button>
                 </a>
