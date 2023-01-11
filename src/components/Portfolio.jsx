@@ -33,8 +33,8 @@ const Portfolio = () => {
     {
       id: 5,
       src: movies,
-      repo: "https://github.com/GerardoIsaac/Movie-search-app",
-      demo: 'https://gerardoisaac.github.io/Movie-search-app/',
+      repo: "https://github.com/GerardoIsaac/Movie_search_app",
+      demo: 'https://gerardoisaac.github.io/Movie_search_app/',
 
     },
     {
