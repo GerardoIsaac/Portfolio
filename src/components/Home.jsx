@@ -13,8 +13,8 @@ const Home = () => {
         className="container min-h-screen p-8 mt-8 flex flex-col justify-center items-center 
         md:flex-row md:justify-center"
       >
-        <div className="flex flex-[2] flex-col justify-evenly h-1/2 md:space-y-16 lg:pl-8 xl:pl-20">
-          <p>Welcome, I'm</p>
+        <div className="flex flex-[2] flex-col justify-evenly h-1/2 md:space-y-14 lg:pl-8 xl:pl-20">
+          <p className="sm:pt-8 lg:pt-0">Welcome, I'm</p>
           <h1 className="text-3xl sm:text-7xl">Gerardo Castañeda</h1>
           <h2 className="text-4xl font-signature text-center text-color3 sm:w-full md:text-6xl">
             Frontend Web Developer
@@ -24,13 +24,13 @@ const Home = () => {
             and visually appealing web applications. Join me down and let's
             collaborate together!
           </p>
-          <div className="flex justify-between lg:block">
+          <div className="flex justify-between md:w-2/3 md:ml-16">
             <Link
               to="portfolio"
               smooth
               duration={500}
               className="group w-fit px-6 py-3 flex font-bold
-              items-center rounded-md bg-gradient-to-r from-color4
+              rounded-md bg-gradient-to-r from-color4
               to-color5 cursor-pointer"
             >
               Portfolio
@@ -42,8 +42,7 @@ const Home = () => {
             <a
               href="/Gerardo-Castaneda-Resume.pdf"
               className="w-fit px-6 py-3 font-bold rounded-md 
-              bg-gradient-to-r from-color4 to-color5 cursor-pointer
-              lg:hidden"
+              bg-gradient-to-r from-color4 to-color5 cursor-pointer"
               download={true}
               target="_blank"
               rel="noreferrer"
