@@ -3,16 +3,16 @@ import Html from "../assets/skills/html.png";
 import Css from "../assets/skills/css.png";
 import Javascript from "../assets/skills/javascript.png";
 import ReactIcon from "../assets/skills/react.png";
-import Nextjs from "../assets/skills/nextjs.png";
 import Bootstrap from "../assets/skills/bootstrap.svg";
 import Tailwind from "../assets/skills/tailwind.png";
 import Sass from "../assets/skills/sass.svg";
 import Redux from "../assets/skills/redux.svg";
 import JQuery from "../assets/skills/jquery.svg";
 import Node from "../assets/skills/node.png";
-import Express from "../assets/skills/express.png";
 import MySql from "../assets/skills/mysql.svg";
 import Git from "../assets/skills/git.svg";
+/* import Nextjs from "../assets/skills/nextjs.png";
+import Express from "../assets/skills/express.png"; */
 
 const Skills = () => {
   const skillsset = [
@@ -70,24 +70,24 @@ const Skills = () => {
       title: "Redux",
       style: "shadow-violet-600",
     },
-    {
+    /* {
       id: 6,
       src: Nextjs,
       title: "Next.js",
       style: "shadow-white",
-    },
+    }, */
     {
       id: 10,
       src: Node,
       title: "Node.js",
       style: "shadow-lime-400",
     },
-    {
+    /* {
       id: 11,
       src: Express,
       title: "Express",
       style: "shadow-zinc-500",
-    },
+    }, */
     {
       id: 12,
       src: MySql,

@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <div
-      className="flex justify-between items-center px-4 bg-colordark w-full min-h-fit fixed z-10"
+      className="flex justify-between items-center px-4 bg-colordark w-full min-h-fit fixed z-10 sm:py-1 lg:py-2"
     >
       <div>
         <img src={logoDark} alt="" width={280} />
