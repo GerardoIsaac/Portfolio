@@ -1,6 +1,7 @@
 import React from "react";
 import HeroImage from "../assets/avatar.png";
 import { TiArrowRightOutline } from "react-icons/ti";
+import { TbFileDownload } from "react-icons/tb";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -24,12 +25,12 @@ const Home = () => {
             and visually appealing web applications. Join me down and let's
             collaborate together!
           </p>
-          <div className="flex justify-between md:w-2/3 md:ml-16">
+          <div className="flex justify-between items-center md:w-2/3 md:ml-16">
             <Link
               to="portfolio"
               smooth
               duration={500}
-              className="group w-fit px-6 py-3 flex font-bold
+              className="group w-fit px-6 py-3 flex items-center font-bold
               rounded-md bg-gradient-to-r from-color4
               to-color5 cursor-pointer"
             >
@@ -41,13 +42,16 @@ const Home = () => {
             {/* mobile only resume button */}
             <a
               href="/Gerardo-Castaneda-Resume.pdf"
-              className="w-fit px-6 py-3 font-bold rounded-md 
+              className="group w-fit px-6 py-3 flex items-center font-bold rounded-md 
               bg-gradient-to-r from-color4 to-color5 cursor-pointer"
               download={true}
               target="_blank"
               rel="noreferrer"
             >
               Resume
+              <span className="group-hover:translate-y-1 duration-300">
+                <TbFileDownload size={25} className='ml-1' />
+              </span>
             </a>
           </div>
         </div>
