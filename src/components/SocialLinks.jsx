@@ -1,8 +1,8 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-
+/* import { BsFillPersonLinesFill } from "react-icons/bs";
+ */
 const SocialLinks = () => {
   const links = [
     {
@@ -32,8 +32,9 @@ const SocialLinks = () => {
         </>
       ),
       href: "mailto:gerardoisaac.cm@gmail.com",
+      style: "rounded-br-md",
     },
-    {
+    /* {
       id: 4,
       child: (
         <>
@@ -41,9 +42,8 @@ const SocialLinks = () => {
         </>
       ),
       href: "/Gerardo-Castaneda-Resume.pdf",
-      style: "rounded-br-md",
       download: true,
-    },
+    }, */
   ];
 
   return (
