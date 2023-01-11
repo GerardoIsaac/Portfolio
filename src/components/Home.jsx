@@ -15,12 +15,12 @@ const Home = () => {
         md:flex-row md:justify-center"
       >
         <div className="flex flex-[2] flex-col justify-evenly h-1/2 md:space-y-14 lg:pl-8 xl:pl-20">
-          <p className="sm:pt-8 lg:pt-0">Welcome, I'm</p>
+          <p className="sm:pt-8 lg:pt-0 text-lg md:text-xl">Welcome, I'm</p>
           <h1 className="text-3xl sm:text-7xl">Gerardo Castañeda</h1>
           <h2 className="text-4xl font-signature text-center text-color3 sm:w-full md:text-6xl">
             Frontend Web Developer
           </h2>
-          <p className="text-lg leading-none text-justify text-zinc-300 max-w-lg sm:text-xl ">
+          <p className="text-lg leading-none text-zinc-300 max-w-lg sm:text-xl lg:text-2xl">
             Looking to share my passion to the world. I love to create intuitive
             and visually appealing web applications. Join me down and let's
             collaborate together!
