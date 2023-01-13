@@ -20,11 +20,21 @@ const About = () => {
           </p>
         </div>
         <p className="md:mt-12">
-          I'm a passionate Frontend developer with a strong foundation in HTML,
-          CSS, and JavaScript. I mainly create websites with React and Tailwind
-          but have worked with technologies like Sass, Bootstrap, and JQuery. I
-          also have basic knowledge of backend technologies like Node.js,
-          Express, and MySQL as databases.
+          I'm a passionate Frontend developer with a strong foundation in{" "}
+          <span className="text-color3 font-bold">HTML</span>,
+          <span className="text-color3 font-bold"> CSS</span>, and{" "}
+          <span className="text-color3 font-bold">JavaScript</span>. I mainly
+          create websites with{" "}
+          <span className="text-color3 font-bold">React</span> and{" "}
+          <span className="text-color3 font-bold">Tailwind</span> but have
+          worked with technologies like{" "}
+          <span className="text-color3 font-bold">Sass</span>,{" "}
+          <span className="text-color3 font-bold">Bootstrap</span>, and{" "}
+          <span className="text-color3 font-bold">JQuery</span>. I also have
+          basic knowledge of backend technologies like{" "}
+          <span className="text-color3 font-bold">Node.js</span>,{" "}
+          <span className="text-color3 font-bold">Express</span>, and{" "}
+          <span className="text-color3 font-bold">MySQL</span> as databases.
         </p>
         <br />
         <p>
