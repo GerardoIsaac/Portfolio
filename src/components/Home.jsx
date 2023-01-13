@@ -44,7 +44,7 @@ const Home = () => {
               href="/Gerardo-Castaneda-Resume.pdf"
               className="group w-fit px-6 py-3 flex items-center font-bold rounded-md 
               bg-gradient-to-r from-color4 to-color5 cursor-pointer"
-              download={true}
+              download={false}
               target="_blank"
               rel="noreferrer"
             >
