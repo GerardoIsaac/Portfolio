@@ -10,36 +10,44 @@ const Portfolio = () => {
     {
       id: 6,
       src: landingpage,
+      desc: "",
       repo: "https://github.com/GerardoIsaac/Landing-page",
+      demo: "",
     },
     {
       id: 4,
       src: blog,
+      desc: "",
       repo: "https://github.com/GerardoIsaac/Blog-app",
+      demo: "",
     },
     {
       id: 1,
       src: bookstore,
+      desc: "",
       repo: "https://github.com/GerardoIsaac/Book-store",
+      demo: "",
     },
 
     {
       id: 3,
       src: minecraft,
+      desc: "",
       repo: "https://github.com/GerardoIsaac/Minecraft-clone",
-      demo: 'https://gerardoisaac.github.io/Minecraft-clone/',
+      demo: "https://gerardoisaac.github.io/Minecraft-clone/",
     },
 
     {
       id: 5,
       src: movies,
+      desc: "",
       repo: "https://github.com/GerardoIsaac/Movie_search_app",
-      demo: 'https://gerardoisaac.github.io/Movie_search_app/',
-
+      demo: "https://gerardoisaac.github.io/Movie_search_app/",
     },
     {
       id: 2,
       src: autoservice,
+      desc: "",
       repo: "https://github.com/GerardoIsaac/automotive-site",
       demo: "https://gerardoisaac.github.io/automotive-site/",
     },
@@ -64,7 +72,7 @@ const Portfolio = () => {
         {/* Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Individual card */}
-          {projects.map(({ id, src, demo, repo }) => (
+          {projects.map(({ id, src, desc, repo, demo }) => (
             <div key={id} className="shadow-md shadow-slate-400 rounded-lg">
               <img
                 src={src}
