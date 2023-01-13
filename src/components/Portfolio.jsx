@@ -4,6 +4,8 @@ import minecraft from "../assets/portfolio/minecraft.png";
 import blog from "../assets/portfolio/blog.png";
 import movies from "../assets/portfolio/movies.png";
 import landingpage from "../assets/portfolio/landingpage.png";
+import { FaGithub } from "react-icons/fa";
+import { HiOutlineGlobeAlt } from "react-icons/hi";
 
 const Portfolio = () => {
   const projects = [
@@ -102,12 +104,13 @@ const Portfolio = () => {
                 <div className="hidden h-full group-hover:block text-lg">
                   <a href={demo} target="_blank" rel="noreferrer">
                     <button className="w-1/2 mx-auto h-3/5 border-r-2 border-slate-400 hover:text-white">
-                      Demo
+                      <HiOutlineGlobeAlt size={30} className='inline-block' /> Watch live
                     </button>
                   </a>
                   <a href={repo} target="_blank" rel="noreferrer">
+                  
                     <button className="w-1/2 mx-auto h-full hover:text-white">
-                      Code
+                    <FaGithub size={30} className='inline-block' /> Code 
                     </button>
                   </a>
                 </div>
