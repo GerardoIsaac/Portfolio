@@ -18,14 +18,16 @@ const Portfolio = () => {
     {
       id: 4,
       src: blog,
-      desc: "",
+      title: "Blog CRUD app",
+      tools: "React, CSS, Node.js, Express, MySQL",
       repo: "https://github.com/GerardoIsaac/Blog-app",
       demo: "",
     },
     {
       id: 1,
       src: bookstore,
-      desc: "",
+      title: "Bookstore CRUD app",
+      tools: "React, CSS, Node.js, Express, MySQL",
       repo: "https://github.com/GerardoIsaac/Book-store",
       demo: "",
     },
@@ -33,7 +35,8 @@ const Portfolio = () => {
     {
       id: 3,
       src: minecraft,
-      desc: "",
+      title: "Minecraft clone",
+      tools: "React, CSS, Three.js",
       repo: "https://github.com/GerardoIsaac/Minecraft-clone",
       demo: "https://gerardoisaac.github.io/Minecraft-clone/",
     },
@@ -41,14 +44,16 @@ const Portfolio = () => {
     {
       id: 5,
       src: movies,
-      desc: "",
+      title: "Movie searching app",
+      tools: "React, CSS",
       repo: "https://github.com/GerardoIsaac/Movie_search_app",
       demo: "https://gerardoisaac.github.io/Movie_search_app/",
     },
     {
       id: 2,
       src: autoservice,
-      desc: "",
+      title: "Autoservice mockup landing page",
+      tools: "HTML, CSS, JavaScript",
       repo: "https://github.com/GerardoIsaac/automotive-site",
       demo: "https://gerardoisaac.github.io/automotive-site/",
     },
@@ -74,7 +79,10 @@ const Portfolio = () => {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Individual card */}
           {projects.map(({ id, src, title, tools, repo, demo }) => (
-            <div key={id} className="shadow-md shadow-slate-400 rounded-lg group">
+            <div
+              key={id}
+              className="shadow-md shadow-slate-400 rounded-lg group"
+            >
               <img
                 src={src}
                 alt=""
@@ -82,7 +90,7 @@ const Portfolio = () => {
               hover:rounded-b-md"
               />
               {/* Card info */}
-              <div className="text-center group h-[100px]">
+              <div className="text-center h-[100px] group">
                 {/* Name and techs */}
                 <div className="group-hover:hidden">
                   <p className="text-lg pt-2">{title}</p>
