@@ -10,7 +10,8 @@ const Portfolio = () => {
     {
       id: 6,
       src: landingpage,
-      desc: "",
+      title: "Mockup landing page",
+      tools: "React, Tailwind",
       repo: "https://github.com/GerardoIsaac/Landing-page",
       demo: "",
     },
@@ -72,25 +73,36 @@ const Portfolio = () => {
         {/* Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Individual card */}
-          {projects.map(({ id, src, desc, repo, demo }) => (
-            <div key={id} className="shadow-md shadow-slate-400 rounded-lg">
+          {projects.map(({ id, src, title, tools, repo, demo }) => (
+            <div key={id} className="shadow-md shadow-slate-400 rounded-lg group">
               <img
                 src={src}
                 alt=""
                 className="rounded-t-md duration-200 hover:scale-105 
               hover:rounded-b-md"
               />
-              <div>
-                <a href={demo} target="_blank" rel="noreferrer">
-                  <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
-                    Demo
-                  </button>
-                </a>
-                <a href={repo} target="_blank" rel="noreferrer">
-                  <button className="w-1/2 px-6 py-3 duration-200 hover:scale-105">
-                    Code
-                  </button>
-                </a>
+              {/* Card info */}
+              <div className="text-center group h-[100px]">
+                {/* Name and techs */}
+                <div className="group-hover:hidden">
+                  <p className="text-lg pt-2">{title}</p>
+                  <div className="w-1/4 border-b-2 border-slate-400 mx-auto pt-1"></div>
+                  <p className="py-4">{tools}</p>
+                </div>
+
+                {/* Live demo and repo buttons */}
+                <div className="hidden h-full group-hover:block text-lg">
+                  <a href={demo} target="_blank" rel="noreferrer">
+                    <button className="w-1/2 mx-auto h-3/5 border-r-2 border-slate-400 hover:text-white">
+                      Demo
+                    </button>
+                  </a>
+                  <a href={repo} target="_blank" rel="noreferrer">
+                    <button className="w-1/2 mx-auto h-full hover:text-white">
+                      Code
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           ))}
