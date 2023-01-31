@@ -48,7 +48,7 @@ const Home = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Resume
+              Download CV
               <span className="group-hover:translate-y-1 duration-300">
                 <TbFileDownload size={25} className='ml-1' />
               </span>
