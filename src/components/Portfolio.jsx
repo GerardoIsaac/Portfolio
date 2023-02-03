@@ -4,7 +4,7 @@ import minecraft from "../assets/portfolio/minecraft.png";
 import blog from "../assets/portfolio/blog.png";
 import movies from "../assets/portfolio/movies.png";
 import landingpage from "../assets/portfolio/landingpage.png";
-import sonical from "../assets/portfolio/sonical-landingpage.png";
+import sonical from "../assets/portfolio/sonical.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 
