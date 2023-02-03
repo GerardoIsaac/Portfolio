@@ -4,6 +4,7 @@ import minecraft from "../assets/portfolio/minecraft.png";
 import blog from "../assets/portfolio/blog.png";
 import movies from "../assets/portfolio/movies.png";
 import landingpage from "../assets/portfolio/landingpage.png";
+import sonical from "../assets/portfolio/sonical-landingpage.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 
@@ -58,6 +59,14 @@ const Portfolio = () => {
       tools: "HTML, CSS, JavaScript",
       repo: "https://github.com/GerardoIsaac/automotive-site",
       demo: "https://gerardoisaac.github.io/automotive-site/",
+    },
+    {
+      id: 7,
+      src: sonical,
+      title: "Headphones store mockup landing page",
+      tools: "HTML, Bootstrap, CSS",
+      repo: "https://github.com/GerardoIsaac/Sonical-landing-page",
+      demo: "https://gerardoisaac.github.io/Sonical-landing-page/",
     },
   ];
 
