@@ -54,7 +54,7 @@ const Portfolio = () => {
     {
       id: 7,
       src: sonical,
-      title: "Headphones store mockup landing page",
+      title: "Sonical landing page",
       tools: "HTML, Bootstrap, CSS",
       repo: "https://github.com/GerardoIsaac/Sonical-landing-page",
       demo: "https://gerardoisaac.github.io/Sonical-landing-page/",
