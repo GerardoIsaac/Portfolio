@@ -47,7 +47,7 @@ const Portfolio = () => {
       id: 5,
       src: movies,
       title: "Movie searching app",
-      tools: "React, CSS",
+      tools: "React, CSS, RESTful API",
       repo: "https://github.com/GerardoIsaac/Movie_search_app",
       demo: "https://gerardoisaac.github.io/Movie_search_app/",
     },
