@@ -1,5 +1,4 @@
 import bookstore from "../assets/portfolio/bookstore.png";
-import autoservice from "../assets/portfolio/autoservice.png";
 import minecraft from "../assets/portfolio/minecraft.png";
 import blog from "../assets/portfolio/blog.png";
 import movies from "../assets/portfolio/movies.png";
@@ -51,14 +50,6 @@ const Portfolio = () => {
       tools: "React, CSS",
       repo: "https://github.com/GerardoIsaac/Movie_search_app",
       demo: "https://gerardoisaac.github.io/Movie_search_app/",
-    },
-    {
-      id: 2,
-      src: autoservice,
-      title: "Autoservice mockup landing page",
-      tools: "HTML, CSS, JavaScript",
-      repo: "https://github.com/GerardoIsaac/automotive-site",
-      demo: "https://gerardoisaac.github.io/automotive-site/",
     },
     {
       id: 7,
