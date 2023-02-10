@@ -15,7 +15,7 @@ const Portfolio = () => {
       title: "Mockup landing page",
       tools: "HTML, JavaScript, Tailwind",
       repo: "https://github.com/GerardoIsaac/Landing-page",
-      demo: "",
+      demo: "https://gerardoisaac.github.io/Landing-page/",
     },
     {
       id: 4,
