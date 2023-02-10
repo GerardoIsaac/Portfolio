@@ -13,7 +13,7 @@ const Portfolio = () => {
       id: 6,
       src: landingpage,
       title: "Mockup landing page",
-      tools: "React, Tailwind",
+      tools: "HTML, JavaScript, Tailwind",
       repo: "https://github.com/GerardoIsaac/Landing-page",
       demo: "",
     },
