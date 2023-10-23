@@ -7,12 +7,12 @@ import Bootstrap from "../assets/skills/bootstrap.svg";
 import Tailwind from "../assets/skills/tailwind.png";
 import Sass from "../assets/skills/sass.svg";
 import Redux from "../assets/skills/redux.svg";
-import JQuery from "../assets/skills/jquery.svg";
+//import JQuery from "../assets/skills/jquery.svg";
 import Node from "../assets/skills/node.png";
 import MySql from "../assets/skills/mysql.svg";
 import Git from "../assets/skills/git.svg";
-/* import Nextjs from "../assets/skills/nextjs.png";
-import Express from "../assets/skills/express.png"; */
+import Nextjs from "../assets/skills/nextjs.png";
+//import Express from "../assets/skills/express.png"; 
 
 const Skills = () => {
   const skillsset = [
@@ -58,24 +58,24 @@ const Skills = () => {
       title: "Bootstrap",
       style: "shadow-violet-500",
     },
-    {
+    /* {
       id: 14,
       src: JQuery,
       title: "JQuery",
       style: "shadow-blue-500",
-    },
+    }, */
     {
       id: 9,
       src: Redux,
       title: "Redux",
       style: "shadow-violet-600",
     },
-    /* {
+    {
       id: 6,
       src: Nextjs,
       title: "Next.js",
       style: "shadow-white",
-    }, */
+    },
     {
       id: 10,
       src: Node,
