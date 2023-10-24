@@ -1,9 +1,10 @@
 import promptopia from "../assets/portfolio/promptopia.png";
 import minecraft from "../assets/portfolio/minecraft.png";
 import blog from "../assets/portfolio/blog.png";
-import movies from "../assets/portfolio/movies.png";
 import hilink from "../assets/portfolio/hilink.png";
 import landingpage from "../assets/portfolio/landingpage.png";
+import codex from "../assets/portfolio/codex.png";
+//import movies from "../assets/portfolio/movies.png";
 //import sonical from "../assets/portfolio/sonical.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
@@ -11,7 +12,7 @@ import { HiOutlineGlobeAlt } from "react-icons/hi";
 const Portfolio = () => {
   const projects = [
     {
-      id: 3,
+      id: 4,
       src: landingpage,
       title: "Mockup landing page",
       tools: "HTML, JavaScript, Tailwind",
@@ -27,7 +28,7 @@ const Portfolio = () => {
       demo: "https://camptraveling.netlify.app/",
     },
     {
-      id: 4,
+      id: 5,
       src: blog,
       title: "Blog CRUD app",
       tools: "React, CSS, Node.js, Express, MySQL",
@@ -51,13 +52,21 @@ const Portfolio = () => {
       demo: "https://gerardoisaac.github.io/Minecraft-clone/",
     },
     {
+      id: 3,
+      src: codex,
+      title: "Codex - coding OpenAI chatbot",
+      tools: "JavaScript, Node.js, Express, CSS, OpenAI",
+      repo: "https://github.com/GerardoIsaac/OpenAI-chatbot",
+      demo: "https://open-ai-chatbot-gerardoisaac.vercel.app/",
+    },
+    /* {
       id: 5,
       src: movies,
       title: "Movie searching app",
       tools: "React, CSS, RESTful API",
       repo: "https://github.com/GerardoIsaac/Movie_search_app",
       demo: "https://gerardoisaac.github.io/Movie_search_app/",
-    },
+    }, */
     /* {
       id: 7,
       src: sonical,
