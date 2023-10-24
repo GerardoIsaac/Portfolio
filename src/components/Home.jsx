@@ -25,12 +25,12 @@ const Home = () => {
             and visually appealing web applications. Join me down and let's
             collaborate together!
           </p>
-          <div className="flex justify-between items-center md:w-2/3 md:ml-16">
+          <div className="flex justify-between items-center md:w-2/3 md:ml-16 text-sm sm:text-base">
             <Link
               to="portfolio"
               smooth
               duration={500}
-              className="group w-fit px-6 py-3 flex items-center font-bold
+              className=" group w-fit px-2 py-1 sm:px-6 sm:py-3 flex items-center font-bold
               rounded-md bg-gradient-to-r from-color4
               to-color5 cursor-pointer"
             >
@@ -42,7 +42,7 @@ const Home = () => {
             {/* mobile only resume button */}
             <a
               href="/Gerardo-Castaneda-Resume.pdf"
-              className="group w-fit px-6 py-3 flex items-center font-bold rounded-md 
+              className="group w-fit px-2 py-1 sm:px-6 sm:py-3 flex items-center font-bold rounded-md 
               bg-gradient-to-r from-color4 to-color5 cursor-pointer"
               download={false}
               target="_blank"

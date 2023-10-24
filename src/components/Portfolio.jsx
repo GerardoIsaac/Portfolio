@@ -22,7 +22,7 @@ const Portfolio = () => {
     {
       id: 2,
       src: hilink,
-      title: "UI/UX landing page for a camping app",
+      title: "Camping app landpage",
       tools: "Typescript, Next.js, Tailwind",
       repo: "https://github.com/GerardoIsaac/Camp-Traveler-App",
       demo: "https://camptraveling.netlify.app/",
@@ -54,7 +54,7 @@ const Portfolio = () => {
     {
       id: 3,
       src: codex,
-      title: "Codex - coding OpenAI chatbot",
+      title: "Codex",
       tools: "JavaScript, Node.js, Express, CSS, OpenAI",
       repo: "https://github.com/GerardoIsaac/OpenAI-chatbot",
       demo: "https://open-ai-chatbot-gerardoisaac.vercel.app/",
@@ -113,9 +113,9 @@ const Portfolio = () => {
                 <div className="text-center h-[100px] group">
                   {/* Name and techs */}
                   <div className="group-hover:hidden">
-                    <p className="text-lg pt-2">{title}</p>
+                    <p className="text-md sm:text-lg pt-2">{title}</p>
                     <div className="w-1/4 border-b-2 border-slate-400 mx-auto pt-1"></div>
-                    <p className="py-4">{tools}</p>
+                    <p className="py-4 text-sm sm:text-base">{tools}</p>
                   </div>
 
                   {/* Live demo and repo buttons */}
