@@ -39,9 +39,8 @@ const Home = () => {
                 <TiArrowRightOutline size={25} className="ml-1" />
               </span>
             </Link>
-            {/* mobile only resume button */}
             <a
-              href="/Gerardo-Castaneda-Resume.pdf"
+              href="/Gerardo-Castaneda-Frontend-Resume.pdf"
               className="group w-fit px-2 py-1 sm:px-6 sm:py-3 flex items-center font-bold rounded-md 
               bg-gradient-to-r from-color4 to-color5 cursor-pointer"
               download={false}
