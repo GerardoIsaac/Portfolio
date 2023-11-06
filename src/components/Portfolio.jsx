@@ -31,7 +31,7 @@ const Portfolio = () => {
       id: 5,
       src: blog,
       title: "Blog CRUD app",
-      tools: "React, CSS, Node.js, Express, MySQL",
+      tools: "React, Sass, Node.js, Express, MySQL",
       repo: "https://github.com/GerardoIsaac/Blog-app",
       demo: "",
     },
@@ -119,13 +119,15 @@ const Portfolio = () => {
                   </div>
 
                   {/* Live demo and repo buttons */}
-                  <div className="hidden h-full group-hover:block text-lg">
+                    <div className="hidden h-full group-hover:block text-lg">
+                  {demo &&
                     <a href={demo} target="_blank" rel="noreferrer">
                       <button className="w-1/2 mx-auto h-3/5 border-r-2 border-slate-400 hover:text-white">
                         <HiOutlineGlobeAlt size={30} className="inline-block" />{" "}
                         Watch live
                       </button>
                     </a>
+                    }
                     <a href={repo} target="_blank" rel="noreferrer">
                       <button className="w-1/2 mx-auto h-full hover:text-white">
                         <FaGithub size={30} className="inline-block" /> Code
