@@ -1,11 +1,10 @@
 import promptopia from "../assets/portfolio/promptopia.png";
 import minecraft from "../assets/portfolio/minecraft.png";
-import blog from "../assets/portfolio/blog.png";
+//import blog from "../assets/portfolio/blog.png";
 import hilink from "../assets/portfolio/hilink.png";
 import landingpage from "../assets/portfolio/landingpage.png";
 import codex from "../assets/portfolio/codex.png";
-//import movies from "../assets/portfolio/movies.png";
-//import sonical from "../assets/portfolio/sonical.png";
+import carsapp from "../assets/portfolio/carsapp.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 
@@ -15,31 +14,39 @@ const Portfolio = () => {
       id: 4,
       src: landingpage,
       title: "Mockup landing page",
-      tools: "HTML, JavaScript, Tailwind",
+      tools: "HTML, JavaScript, TailwindCSS",
       repo: "https://github.com/GerardoIsaac/Landing-page",
       demo: "https://gerardoisaac.github.io/Landing-page/",
     },
     {
-      id: 2,
+      id: 5,
       src: hilink,
       title: "Camping app landpage",
-      tools: "Typescript, Next.js, Tailwind",
+      tools: "Typescript, Next.js, TailwindCSS",
       repo: "https://github.com/GerardoIsaac/Camp-Traveler-App",
       demo: "https://camptraveling.netlify.app/",
     },
     {
+      id: 2,
+      src: carsapp,
+      title: "Car rental app",
+      tools: "Typescript, React, Next.js, TailwindCSS",
+      repo: "https://github.com/GerardoIsaac/car-showcase-app",
+      demo: "https://car-showcase-app-nu.vercel.app/",
+    },
+    /* {
       id: 5,
       src: blog,
       title: "Blog CRUD app",
       tools: "React, Sass, Node.js, Express, MySQL",
       repo: "https://github.com/GerardoIsaac/Blog-app",
       demo: "",
-    },
+    }, */
     {
       id: 1,
       src: promptopia,
       title: "Promptopia",
-      tools: "Next.js, Tailwind, MongoDB, Mongoose",
+      tools: "Next.js, TailwindCSS, MongoDB, Mongoose",
       repo: "https://github.com/GerardoIsaac/AI-prompts-app",
       demo: "https://ai-prompts-app-gerardoisaac.vercel.app/",
     },
@@ -59,22 +66,6 @@ const Portfolio = () => {
       repo: "https://github.com/GerardoIsaac/OpenAI-chatbot",
       demo: "https://open-ai-chatbot-gerardoisaac.vercel.app/",
     },
-    /* {
-      id: 5,
-      src: movies,
-      title: "Movie searching app",
-      tools: "React, CSS, RESTful API",
-      repo: "https://github.com/GerardoIsaac/Movie_search_app",
-      demo: "https://gerardoisaac.github.io/Movie_search_app/",
-    }, */
-    /* {
-      id: 7,
-      src: sonical,
-      title: "Sonical landing page",
-      tools: "HTML, Bootstrap, CSS",
-      repo: "https://github.com/GerardoIsaac/Sonical-landing-page",
-      demo: "https://gerardoisaac.github.io/Sonical-landing-page/",
-    }, */
   ];
 
   return (
