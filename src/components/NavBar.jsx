@@ -4,49 +4,36 @@ import { Link } from "react-scroll";
 import logoDark from "../assets/dark-shadow-logo.svg";
 
 const NavBar = () => {
-  const [nav, setNav] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const links = [
-    {
-      id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
-      link: "about",
-    },
-    {
-      id: 3,
-      link: "portfolio",
-    },
-    {
-      id: 4,
-      link: "skills",
-    },
-    {
-      id: 5,
-      link: "contact",
-    },
-  ];
+  const links = ["home", "about", "portfolio", "skills", "contact"];
 
   return (
-    <div
-      className="flex justify-between items-center px-4 bg-colordark w-full min-h-fit fixed z-10 sm:py-1 lg:py-2"
+    <nav
+      className="flex justify-between items-center px-4 bg-colordark opacity-95 
+      w-full fixed z-20 top-0 sm:py-1 lg:py-2 "
     >
-      <div>
-        <img src={logoDark} alt="" width={280} />
-      </div>
+      <Link to="home" smooth duration={900} className="cursor-pointer">
+        <img src={logoDark} alt="logo" width={280} height="auto" />
+      </Link>
 
       {/* Desktop */}
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map((link) => (
           <li
-            key={id}
+            key={link}
             className="p-2 cursor-pointer capitalize text-lg font-medium text-slate-400 
-            hover:scale-105 hover:text-slate-100 duration-200
+            hover:scale-110 hover:text-white duration-200
             lg:px-8"
           >
-            <Link to={link} smooth duration={500}>
+            <Link
+              to={link}
+              spy
+              offset={10}
+              activeClass="text-white"
+              smooth
+              duration={900}
+            >
               {link}
             </Link>
           </li>
@@ -55,24 +42,24 @@ const NavBar = () => {
 
       {/* Mobile */}
       <div
-        onClick={() => setNav(!nav)}
+        onClick={() => setIsNavOpen(!isNavOpen)}
         className="cursor-pointer pr-4 z-10 text-slate-300 md:hidden"
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {isNavOpen ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
-      {nav && (
+      {isNavOpen && (
         <ul
           className="flex flex-col justify-center items-center absolute top-0 left-0 w-full 
-        h-screen bg-gradient-to-b from-colordark via-color1 via to-color2 text-slate-300"
+        h-screen bg-gradient-to-br from-colordark via-colordark to-color1 text-slate-200"
         >
-          {links.map(({ id, link }) => (
-            <li key={id} className="cursor-pointer capitalize py-6 text-4xl">
+          {links.map((link) => (
+            <li key={link} className="cursor-pointer capitalize py-6 text-4xl">
               <Link
                 to={link}
-                onClick={() => setNav(!nav)}
+                onClick={() => setIsNavOpen(!isNavOpen)}
                 smooth
-                duration={500}
+                duration={900}
               >
                 {link}
               </Link>
@@ -80,7 +67,7 @@ const NavBar = () => {
           ))}
         </ul>
       )}
-    </div>
+    </nav>
   );
 };
 

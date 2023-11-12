@@ -6,7 +6,6 @@ import { HiOutlineMail } from "react-icons/hi";
 const SocialLinks = () => {
   const links = [
     {
-      id: 1,
       child: (
         <>
           LinkedIn <FaLinkedin size={30} />
@@ -16,7 +15,6 @@ const SocialLinks = () => {
       style: "rounded-tr-md",
     },
     {
-      id: 2,
       child: (
         <>
           GitHub <FaGithub size={30} />
@@ -25,7 +23,6 @@ const SocialLinks = () => {
       href: "https://github.com/gerardoisaac/",
     },
     {
-      id: 3,
       child: (
         <>
           Mail <HiOutlineMail size={30} />
@@ -34,44 +31,31 @@ const SocialLinks = () => {
       href: "mailto:gerardoisaac.cm@gmail.com",
       style: "rounded-br-md",
     },
-    /* {
-      id: 4,
-      child: (
-        <>
-          Resume <BsFillPersonLinesFill size={30} />
-        </>
-      ),
-      href: "/Gerardo-Castaneda-Resume.pdf",
-      download: true,
-    }, */
   ];
 
   return (
-    
-      <div className="hidden top-[41%] left-0 fixed lg:flex lg:flex-col">
-        <ul>
-          {links.map(({ id, child, href, style, download }) => (
-            <li
-              key={id}
-              className={`flex justify-between items-center w-40 h-14 px-4 
-            ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 
-            bg-slate-600 ${style}`}
+    <div className="hidden top-[41%] left-0 fixed lg:flex lg:flex-col">
+      <ul>
+        {links.map(({ index, child, href, style }) => (
+          <li
+            key={index}
+            className={`flex justify-between items-center w-40 h-14 px-4 
+            ml-[-100px] hover:ml-[-10px] hover:rounded-md ease-in duration-300 
+            bg-color1 hover:bg-color2 ${style}`}
+          >
+            <a
+              href={href}
+              className="flex justify-between items-center w-full
+              text-slate-400 hover:text-slate-100"
+              target="_blank"
+              rel="noreferrer"
             >
-              <a
-                href={href}
-                className="flex justify-between items-center w-full
-              text-color3 hover:text-white"
-                download={download}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {child}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    
+              {child}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
