@@ -93,6 +93,7 @@ const Portfolio = () => {
 
               {/* Live demo and repo buttons */}
               <div className="hidden h-full group-hover:block text-lg">
+                {/* //todo: remover botones dentro de anchors, un elemento interactivo no puede estar dentro de otro elemento interactivo */}
                 {demo && (
                   <a href={demo} target="_blank" rel="noreferrer">
                     <button className="w-1/2 mx-auto h-3/5 border-r-2 border-slate-400 hover:text-white">
